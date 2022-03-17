@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-section {
+  background: no-repeat url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+  background-size: cover;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-section-content {
+  width: 45%;
+}
+
+.image-section {
+  width: 35vw;
+  height: 100vh;
+  background: url("images/hero-desktop.jpg") no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  line-height: 1.1em;
+  color: #413a3a;
+}
+h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.desc {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #ce9797;
+  margin-bottom: 2rem;
+}
+
+form {
+  position: relative;
+}
+
+.email {
+  border: 1px solid #ce9797;
+  border-radius: 2rem;
+  background-color: transparent;
+  padding: 1rem;
+  font-family: inherit;
+  width: 300px;
+}
+
+button {
+  position: absolute;
+  border: 0;
+  padding: 0.9rem;
+  width: 80px;
+  border-radius: 2rem;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  transform: translate(-50px, -3px);
+  box-shadow: 0 2px 7px 0 rgba(206, 151, 151, 0.8);
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(135deg, #fff5f5, #f8bfbf);
+}
+
+small {
+  display: none;
+  margin: 0.7rem 1rem;
+  color: #f96262;
+}
+
+form.error small {
+  display: block;
+}
+
+form.error .email {
+  border: 2px solid #f96262;
+}
+
+@media (max-width: 1000px) {
+  main {
+    overflow: scroll;
+    flex-direction: column-reverse;
+    background-color: #fff5f5;
+  }
+
+  .text-section {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .text-section-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .image-section {
+    width: 100%;
+    background: url("images/hero-mobile.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    min-height: 200px;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff5f5;
+    padding: 25px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
